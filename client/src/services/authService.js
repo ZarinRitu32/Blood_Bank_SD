@@ -8,7 +8,7 @@ export const handleLogin = (e, email, password, role) => {
       return alert("please provide all fields!")
     }
     
-    console.log('login',e,email, password, role)
+    console.log("login",e,email, password, role)
   } catch (error) {
     console.log(error);
   }
