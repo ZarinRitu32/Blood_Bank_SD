@@ -5,3 +5,16 @@
   /* overflow: hidden; */
 }
 
+/*================
+========FORM
+==================*/
+.form-banner img{
+  height:100%;
+  width:100%;
+}
+.form-container{
+  display:files;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
