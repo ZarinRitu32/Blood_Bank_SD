@@ -1,4 +1,4 @@
-import React,{useStates} from 'react'
+import React,{useState} from 'react'
 import InputType from './InputType'
 import { Link } from "react-router-dom"
 import { handleLogin, handleRegister } from "../../../services/authService";
@@ -88,7 +88,7 @@ import { handleLogin, handleRegister } from "../../../services/authService";
               </div> 
             </div>
 
-            /*switch statement*/
+            {/*switch statement*/}
             {(()=>{
               switch(true){
                 case formType === 'login':{
@@ -193,71 +193,7 @@ import { handleLogin, handleRegister } from "../../../services/authService";
               }
             })()}
             
-                <InputType
-                labelText = {'Email'} 
-                labelFor={'forEmail'}
-                inputType={'email'}
-                name={'email'}
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                /> 
-                <InputType
-                labelText= {'Password'} 
-                labelFor={'forPassword'}
-                inputType={'Password'}
-                name={'Password'}
-                value={Password}
-                onChange={(e) => setPassword(e.target.value)}
-                /> 
-                <InputType
-                      labelText={"Name"}
-                      labelFor={"forName"}
-                      inputType={"text"}
-                      name={"name"}
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                />
-                <InputType
-                      labelText={"Organisation Name"}
-                      labelFor={"fororganisationName"}
-                      inputType={"text"}
-                      name={"organisationName"}
-                      value={organisationName}
-                      onChange={(e) => setOrganisationName(e.target.value)}
-                    />
-                 <InputType
-                      labelText={"Hospital Name"}
-                      labelFor={"forHospitalName"}
-                      inputType={"text"}
-                      name={"hospitalName"}
-                      value={hospitalName}
-                      onChange={(e) => setHospitalName(e.target.value)}
-                />
-                <InputType
-                    labelText={"website"}
-                    labelFor={"forWebsite"}
-                    inputType={"text"}
-                    name={"website"}
-                    value={website}
-                    onChange={(e) => setWebsite(e.target.value)}
-                />
-                <InputType
-                    labelText={"Address"}
-                    labelFor={"forAddress"}
-                    inputType={"text"}
-                    name={"address"}
-                    value={address}
-                    onChange={(e) => setAddress(e.target.value)}
-                  />
-                  <InputType
-                    labelText={"Phone"}
-                    labelFor={"forPhone"}
-                    inputType={"text"}
-                    name={"phone"}
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
-                  />
-            
+                         
 <div className = "d-fle flex-row justify-content-between">
 {formType === "login" ? (
             <p>
@@ -281,4 +217,4 @@ import { handleLogin, handleRegister } from "../../../services/authService";
   )
 }
 
-export default Form
+export default Form;

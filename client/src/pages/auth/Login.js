@@ -1,5 +1,5 @@
 import React from "react";
-import Form from "../../component/Shared/Form/Form";
+import Form from "../../component/Shared/Form/InputType";
 
 const Login = () => {
   return (
