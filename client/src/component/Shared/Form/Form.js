@@ -107,7 +107,7 @@ import { handleLogin, handleRegister } from "../../../services/authService";
                         labelFor={"forPassword"}
                         inputType={"Password"}
                         name={"Password"}
-                        value={Password}
+                        value={password}
                         onChange={(e) => setPassword(e.target.value)}
                       /> 
                     </>
@@ -206,7 +206,7 @@ import { handleLogin, handleRegister } from "../../../services/authService";
             </p>
           )}
     <button className="btn btn-primary" type="submit">
-        {SubmitBtn}
+        {submitBtn}
     </button>
 
 </div>
