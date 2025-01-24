@@ -73,7 +73,7 @@ import InputType from './InputType'
                   return (
                     <>
                       <InputType
-                        labelText {"Email"} 
+                        labelText= {'email'} 
                         labelFor={'forEmail'}
                         inputType={'email'}
                         name={'email'}
@@ -81,7 +81,7 @@ import InputType from './InputType'
                         onChange={(e) => setEmail(e.target.value)}
                       /> 
                       <InputType
-                        labelText {"Password"} 
+                        labelText ={'Password'} 
                         labelFor={'forPassword'}
                         inputType={'Password'}
                         name={'Password'}
@@ -95,7 +95,7 @@ import InputType from './InputType'
                   return (
                   <>
                     <InputType
-                        labelText {"Email"} 
+                        labelText ={'Email'} 
                         labelFor={'forEmail'}
                         inputType={'email'}
                         name={'email'}
@@ -103,7 +103,7 @@ import InputType from './InputType'
                         onChange={(e) => setEmail(e.target.value)}
                      /> 
                     <InputType
-                        labelText {"Password"} 
+                        labelText ={'Password'} 
                         labelFor={'forPassword'}
                         inputType={'Password'}
                         name={'Password'}
@@ -172,7 +172,7 @@ import InputType from './InputType'
             })()}
             
                 <InputType
-                labelText {"Email"} 
+                labelText = {'Email'} 
                 labelFor={'forEmail'}
                 inputType={'email'}
                 name={'email'}
@@ -180,7 +180,7 @@ import InputType from './InputType'
                 onChange={(e) => setEmail(e.target.value)}
                 /> 
                 <InputType
-                labelText {"Password"} 
+                labelText= {'Password'} 
                 labelFor={'forPassword'}
                 inputType={'Password'}
                 name={'Password'}
